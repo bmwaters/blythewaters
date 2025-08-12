@@ -62,3 +62,11 @@ body.dark-mode a:hover {
 #darkModeToggle:hover {
   background: var(--orange-rustic);
 }
+.profile-pic {
+  width: 180px;       /* Adjust size here */
+  height: 180px;
+  object-fit: cover;  /* Keeps it from stretching */
+  border-radius: 50%; /* Makes it a perfect circle */
+  border: 3px solid #ccc; /* Optional outline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}

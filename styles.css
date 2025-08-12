@@ -1,5 +1,6 @@
 :root {
   /* Color palette */
+  --emerald-green: #50b883;   /* Emerald green */
   --lavender-tech: #6c5b7b;   /* Dark lavender */
   --mint-soft: #b7e4c7;       /* Taylor-inspired mint */
   --orange-rustic: #d88c57;   /* Rustic orange */
@@ -43,13 +44,13 @@ padding: 0;
 }
 
 nav a {
-    color: inherit;
+    color: var(--emerald-green);
     text-decoration: none;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: var(--lavender-tech);
+    color: var(--mint-soft);
 }
 
 section {

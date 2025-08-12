@@ -89,11 +89,11 @@ h1, h2, h3 {
 }
 
 a {
-  color: var(--mint-soft);
+  color: var(--orange-rustic);
 }
 
 a:hover {
-  color: var(--orange-rustic);
+  color: var(--mint-soft);
 }
 
 /* Dark mode overrides */
@@ -109,11 +109,11 @@ body.dark-mode h3 {
 }
 
 body.dark-mode a {
-  color: var(--lavender-tech);
+  color: var(--orange-rustic);
 }
 
 body.dark-mode a:hover {
-  color: var(--orange-rustic);
+  color: var(--mint-soft);
 }
 
 /* Toggle button styling */
@@ -125,6 +125,9 @@ body.dark-mode a:hover {
   cursor: pointer;
   border-radius: 6px;
   align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 #darkModeToggle:hover {

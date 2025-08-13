@@ -114,7 +114,7 @@ body.dark-mode a {
 }
 
 body.dark-mode a:hover {
-  color: var(--mint-soft);
+  color: var(--lavender-tech);
 }
 
 /* Toggle button styling */

@@ -1,14 +1,15 @@
 :root {
   /* Color palette */
-  --emerald-green: #50b883;
-  --mint-soft: #b7e4c7;
-  --orange-rustic: #d88c57;
-  --lavender-tech: #6c5b7b;
+  --emerald-green: #50b883;       /* Emerald green */
+  --dark-emerald: #2f6f4e;        /* Dark emerald for big headers in dark mode */
+  --soft-mint: #b7e4c7;           /* Mint for smaller headers in dark mode */
+  --lavender-tech: #6c5b7b;       /* Lavender for big headers in light mode */
+  --light-purple: #c9a0dc;        /* Light visible purple for links and toggle */
   --background-light: #fdfdfd;
   --background-dark: #1e1e2f;
   --text-light: #f5f5f5;
   --text-dark: #1e1e1e;
-  --hover-dark-grey: #333333;
+  --hover-dark-purple: #a678c0;
 }
 
 /* Header flex layout */
@@ -17,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0px;
-  border-bottom: 2px solid var(--orange-rustic);
+  border-bottom: 2px solid var(--emerald-green);
 }
 
 /* Left side stacks name and button vertically */
@@ -31,7 +32,7 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid var(--mint-soft);
+  border: 2px solid var(--soft-mint);
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   object-fit: cover;
 }
@@ -62,15 +63,6 @@ section {
   margin-bottom: 10px;
 }
 
-section#about h2,
-section#education h2,
-section#projects h2,
-section#skills h2,
-section#contact h2 {
-  /* Big headers */
-  margin-bottom: 6px;
-}
-
 /* About content paragraph */
 .about-content {
   max-width: 600px;
@@ -87,8 +79,8 @@ body {
   padding: 0 20px;
 }
 
-/* Light Mode Colors */
-/* Big headers (sections) */
+/* LIGHT MODE STYLING */
+/* Big headers */
 body h1, 
 body h2#about, 
 body h2#education, 
@@ -100,16 +92,16 @@ body h2#contact {
 
 /* Smaller headers */
 h2, h3 {
-  color: var(--mint-soft);
+  color: var(--emerald-green);
 }
 
 /* Links */
 a {
-  color: var(--orange-rustic);
+  color: var(--light-purple);
 }
 
 a:hover {
-  color: var(--hover-dark-grey);
+  color: var(--hover-dark-purple);
 }
 
 /* Nav & name */
@@ -117,9 +109,9 @@ header h1, nav a {
   color: var(--lavender-tech);
 }
 
-/* Toggle button */
+/* Dark mode toggle button in light mode */
 #darkModeToggle {
-  background: var(--orange-rustic);
+  background: var(--emerald-green);
   color: var(--text-light);
   border: none;
   padding: 8px 16px;
@@ -132,7 +124,7 @@ header h1, nav a {
 }
 
 #darkModeToggle:hover {
-  background: var(--emerald-green);
+  background: var(--lavender-tech);
 }
 
 /* Profile pic */
@@ -151,7 +143,7 @@ header h1, nav a {
   gap: 12px;
 }
 
-/* Dark Mode Overrides */
+/* DARK MODE STYLING */
 body.dark-mode {
   background-color: var(--background-dark);
   color: var(--text-light);
@@ -164,21 +156,21 @@ body.dark-mode h2#education,
 body.dark-mode h2#projects, 
 body.dark-mode h2#skills, 
 body.dark-mode h2#contact {
-  color: var(--emerald-green);
+  color: var(--dark-emerald);
 }
 
 /* Smaller headers */
 body.dark-mode h2, body.dark-mode h3 {
-  color: var(--mint-soft);
+  color: var(--soft-mint);
 }
 
 /* Links */
 body.dark-mode a {
-  color: var(--orange-rustic);
+  color: var(--light-purple);
 }
 
 body.dark-mode a:hover {
-  color: var(--hover-dark-grey);
+  color: var(--hover-dark-purple);
 }
 
 /* Nav & name */
@@ -186,9 +178,9 @@ body.dark-mode header h1, body.dark-mode nav a {
   color: var(--emerald-green);
 }
 
-/* Toggle button */
+/* Dark mode toggle button */
 body.dark-mode #darkModeToggle {
-  background: var(--orange-rustic);
+  background: var(--light-purple);
 }
 
 body.dark-mode #darkModeToggle:hover {

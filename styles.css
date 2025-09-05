@@ -1,14 +1,14 @@
 :root {
   /* Color palette */
-  --emerald-green: #50b883;   /* Emerald green */
-  --lavender-tech: #6c5b7b;   /* Dark lavender */
-  --mint-soft: #b7e4c7;       /* Taylor-inspired mint */
-  --orange-rustic: #d88c57;   /* Rustic orange */
+  --emerald-green: #50b883;   /* Primary accent */
+  --mint-soft: #b7e4c7;       /* Headings and subtle highlights */
+  --orange-rustic: #d88c57;   /* Hover/attention accent */
   --background-light: #fdfdfd;
   --background-dark: #1e1e2f;
   --text-light: #f5f5f5;
   --text-dark: #1e1e1e;
 }
+
 /* Header flex layout */
 header {
   display: flex;
@@ -26,47 +26,47 @@ header {
 }
 
 .header-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid var(--mint-soft);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--mint-soft);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  object-fit: cover;
 }
 
 /* Nav horizontal */
 nav ul {
-list-style: none;
-display: flex;
-gap: 20px;
-margin: 0;
-padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-    color: var(--emerald-green);
-    text-decoration: none;
-    font-weight: 600;
+  color: var(--emerald-green);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 nav a:hover {
-    color: var(--mint-soft);
+  color: var(--orange-rustic);
 }
 
 section {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 section#about h2 {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 /* About content paragraph */
 .about-content {
-    max-width: 600px;
-    line-height: 1.4;
-    margin: 0;
+  max-width: 600px;
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* Default light mode */
@@ -78,23 +78,18 @@ body {
   padding: 0 20px;
 }
 
-.transfer-classes {
-    margin-top: 6px;
-    margin-left: 0;
-    list-style: none;
-}
-
-/* Accent usage example */
+/* Accent usage for headings */
 h1, h2, h3 {
-  color: var(--lavender-tech);
+  color: var(--mint-soft);
 }
 
+/* Links */
 a {
-  color: var(--orange-rustic);
+  color: var(--emerald-green);
 }
 
 a:hover {
-  color: var(--mint-soft);
+  color: var(--orange-rustic);
 }
 
 /* Dark mode overrides */
@@ -106,20 +101,20 @@ body.dark-mode {
 body.dark-mode h1, 
 body.dark-mode h2, 
 body.dark-mode h3 {
-  color: var(--mint-soft);
+  color: var(--emerald-green);
 }
 
 body.dark-mode a {
-  color: var(--orange-rustic);
+  color: var(--mint-soft);
 }
 
 body.dark-mode a:hover {
-  color: var(--lavender-tech);
+  color: var(--orange-rustic);
 }
 
 /* Toggle button styling */
 #darkModeToggle {
-  background: var(--lavender-tech);
+  background: var(--emerald-green);
   color: var(--text-light);
   border: none;
   padding: 8px 16px;
@@ -134,16 +129,19 @@ body.dark-mode a:hover {
 #darkModeToggle:hover {
   background: var(--orange-rustic);
 }
+
+/* Profile pic styling */
 .profile-pic {
-  width: 140px;       /* Adjust size here */
+  width: 140px;
   height: 140px;
-  object-fit: cover;  /* Keeps it from stretching */
-  border-radius: 50%; /* Makes it a perfect circle */
-  border: 3px solid #ccc; /* Optional outline */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.name-pic{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+
+.name-pic {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
